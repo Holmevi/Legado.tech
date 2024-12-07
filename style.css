@@ -1,855 +1,953 @@
 :root {
-    touch-action: pan-x pan-y;
-    height: 100% 
+  touch-action: pan-x pan-y;
+  height: 100%;
 }
 
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    top: 0px;
-    background-color: #242526;
-    height: 100%;
-    width: 100vw;
-    overflow: -moz-hidden-unscrollable;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
+  top: 0px;
+  background-color: #242526;
+  height: 100%;
+  width: 100vw;
+  overflow: -moz-hidden-unscrollable;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
-    color: rgb(161, 136, 206);               /* Ta bort blå text på länkar */
-    text-decoration: none;        /* Ta bort understrukning av länkar */
+  color: rgb(161, 136, 206); /* Ta bort blå text på länkar */
+  text-decoration: none; /* Ta bort understrukning av länkar */
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .nav-bar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    background-color: rgb(39, 35, 46);
-    width: 100vw;
-    height: 70px;
-    top: 0px;
-    margin: 0px;
-    padding: 0px 0px;
-    display: flex;
-    gap: 0px;
-    margin: 0px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background-color: rgb(39, 35, 46);
+  width: 100vw;
+  height: 70px;
+  top: 0px;
+  margin: 0px;
+  padding: 0px 0px;
+  display: flex;
+  gap: 0px;
+  margin: 0px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 1;
 }
 
 .menu-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 900px;
-    height: 70px;
-    top: 0px;
-    margin: 0px;
-    gap: 0px;
-    margin: 0px;
-    z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 900px;
+  height: 70px;
+  top: 0px;
+  margin: 0px;
+  gap: 0px;
+  margin: 0px;
+  z-index: 1;
 }
 
 .nav-legado-buttons {
-    display: flex;
-    background-color: rgb(39, 35, 46);
-    border-radius: 20px;
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  border: solid black 3px;
+  border-radius: 24px;
 }
 
 .nav-legado-buttons:hover {
-    box-shadow: 0px 0px 5px 5px rgb(161, 136, 206);
-    /* in order: x offset, y offset, blur size, spread size, color */
-    /* blur size and spread size are optional (they default to 0) */
+  box-shadow: 0px 0px 3px 3px rgb(255, 255, 255, 0.3);
+  /* in order: x offset, y offset, blur size, spread size, color */
+  /* blur size and spread size are optional (they default to 0) */
 }
 
 .legado-se-button {
-    border: solid 0px white;
-    border-radius: 0px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    transition: 250ms;
-    width: 200px;
-    height: 45px;
-    padding: 0px 0px;
-    padding-left: 10px;
-    background-color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-weight: 700;
-    cursor: pointer;
-    color:rgb(0, 0, 0);
-    margin: 0px;
+  border: solid 0px white;
+  border-radius: 0px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: 250ms;
+  width: 200px;
+  height: 44px;
+  padding: 0px 0px;
+  padding-left: 10px;
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  margin: 0px;
 }
 
 .yin-yang {
-    height: 45px;
+  height: 44px;
+  padding: 0px 0px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin: 0px;
+}
+
+.legado-tech-button {
+  border: solid 1px black;
+  border-radius: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: 250ms;
+  width: 230px;
+  height: 44px;
+  padding: 0px 0px;
+  background-color: black;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+  margin: 0px;
+}
+
+.legado {
+  font-family: "Piazzolla", serif;
+  display: inline;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 900;
+}
+
+.tech {
+  font-family: "Roboto", sans-serif;
+  display: inline;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-links img {
+  /* Gäller alla bild-element under nav-links */
+  height: 50px;
+  width: 50px;
+  border-radius: 22px;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  border: solid black 3px;
+}
+
+.nav-links img:hover {
+  box-shadow: 0px 0px 3px 3px rgb(255, 255, 255, 0.3);
+  /* in order: x offset, y offset, blur size, spread size, color */
+  /* blur size and spread size are optional (they default to 0) */
+}
+
+.main-page {
+  scroll-behavior: smooth;
+  flex-direction: column;
+  width: 100vw;
+  display: flex;
+  gap: 15px;
+}
+
+.about-me {
+  background-color: rgb(26, 23, 31);
+  position: relative; /* Egna ändringar */
+  top: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  padding: 8px 8px 8px 8px;
+  max-width: 900px;
+  height: 520px; /* Ändrat från 85vh */
+  border-radius: 15px;
+  /* border: 1px solid black; */
+  gap: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 6px 4px 6px;
+}
+
+#name {
+  color: white;
+  font-size: 45px;
+  font-weight: 200;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#profession {
+  color: rgb(209, 196, 231);
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about-me p {
+  color: rgb(209, 196, 231);
+  font-size: 18px;
+  line-height: 24px;
+  margin: 10px;
+  font-weight: 300;
+  text-align: center;
+}
+
+#jimmy-legado-holmevi-portrait {
+  margin-top: 3px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.content-section {
+  background-color: rgb(26, 23, 31);
+  color: rgb(209, 196, 231);
+  position: relative; /* Egna ändringar */
+  top: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px auto;
+  padding: 8px 8px 8px 8px;
+  width: 900px;
+  height: fit-content; /* Ändrat från 85vh */
+  border-radius: 15px;
+  /* border: 1px solid black; */
+  gap: 0px;
+  box-shadow: rgba(0, 0, 0, 0.15) 6px 4px 6px;
+}
+
+.content-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.content-text {
+  color: #4b5563;
+  font-size: 18px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  text-align: center;
+}
+
+.cv-icon {
+  width: 50px;
+  margin: 15px 225px;
+  transition: 0.2s;
+}
+
+.cv-icon:hover {
+  filter: brightness(1.1);
+}
+
+.content-photo-right {
+  background-color: rgb(26, 23, 31);
+  color: rgb(209, 196, 231);
+  position: relative; /* Egna ändringar */
+  top: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin: 0px auto;
+  padding: 8px 8px 8px 8px;
+  width: 900px;
+  height: fit-content; /* Ändrat från 85vh */
+  border-radius: 15px;
+  /* border: 1px solid black; */
+  gap: 0px;
+  box-shadow: rgba(0, 0, 0, 0.15) 6px 4px 6px;
+}
+
+.content-photo-right p {
+  color: rgb(209, 196, 231);
+  font-size: 18px;
+  line-height: 24px;
+  margin: 10px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.content-photo-left {
+  background-color: rgb(26, 23, 31);
+  color: rgb(209, 196, 231);
+  position: relative; /* Egna ändringar */
+  top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px auto;
+  padding: 8px 8px 8px 8px;
+  width: 900px;
+  height: fit-content; /* Ändrat från 85vh */
+  border-radius: 15px;
+  /* border: 1px solid black; */
+  gap: 0px;
+  box-shadow: rgba(0, 0, 0, 0.15) 6px 4px 6px;
+}
+
+.content-photo-left p {
+  color: rgb(209, 196, 231);
+  font-size: 18px;
+  line-height: 24px;
+  margin: 10px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.header-text {
+  color: white;
+  font-size: 45px;
+  font-weight: 200;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.content-image {
+  margin-top: 3px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.text-container {
+  margin: 0px 40px;
+}
+
+.content-section p {
+  color: rgb(209, 196, 231);
+  font-size: 18px;
+  line-height: 24px;
+  margin: 5px 10px 5px 10px;
+  text-align: center;
+}
+
+.photo-section {
+  background-color: rgb(26, 23, 31);
+  position: relative; /* Egna ändringar */
+  top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin: 0px auto;
+  padding: 8px 8px 8px 8px;
+  max-width: 900px;
+  height: 520px; /* Ändrat från 85vh */
+  border-radius: 15px;
+  /* border: 1px solid black; */
+  gap: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 6px 4px 6px;
+}
+
+.photo-section p {
+  color: rgb(209, 196, 231);
+  font-size: 18px;
+  line-height: 24px;
+  margin: 5px 10px 5px 10px;
+  text-align: center;
+}
+
+.sq-logo {
+  height: 20px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.end {
+  position: relative; /* Egna ändringar */
+  top: 70px;
+  margin: 0px auto;
+  width: 250px;
+  height: 70px; /* Ändrat från 85vh */
+  /* border: 1px solid black; */
+}
+
+.content-title {
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.content-text {
+  color: rgb(209, 196, 231);
+  font-size: 18px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  text-align: center;
+}
+
+#contact-field {
+  width: 800px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.contact-block {
+  width: 400px;
+  margin: 0px;
+  line-height: 20px;
+  text-align: right;
+}
+
+.chip-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px 5px 0px;
+}
+
+.chip {
+  border-radius: 99px;
+  padding: 4px 12px;
+  font-size: 14px;
+  border: 1px solid rgb(161, 136, 206);
+  color: rgb(209, 196, 231);
+  background-color: rgb(39, 35, 46);
+}
+
+.project {
+  position: relative; /* Egna ändringar */
+  top: 0px;
+}
+
+.projects-container {
+  background-color: rgb(26, 23, 31);
+  color: rgb(209, 196, 231);
+  position: relative; /* Egna ändringar */
+  top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px auto;
+  padding: 8px 0px 8px 0px;
+  width: 900px;
+  height: fit-content; /* Ändrat från 85vh */
+  border-radius: 15px;
+  /* border: 1px solid black; */
+  gap: 0px;
+  box-shadow: rgba(0, 0, 0, 0.15) 6px 4px 6px;
+}
+
+.project {
+  margin: 10px;
+  /*  max-width: calc(1024px - 40px);     */
+  max-width: 420px;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+#project-collection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 900px;
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation-name: project-frames;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes project-frames {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+}
+
+.img-overlay {
+  position: absolute;
+  inset: 0px;
+  background-color: #26262699;
+  opacity: 0;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Bestämmer hur bild ska passa innuti div*/
+}
+
+.project-text-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.project-text-title {
+  font-size: 36px;
+  line-height: 40px;
+  color: white;
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.chip-wrapper-project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.project-text-subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: white;
+  margin-top: 30px;
+  text-shadow: 2px 2px 2px #000000;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  width: 100vw;
+  height: 60px;
+  bottom: 0px;
+  padding: 20px 0px;
+  background-color: rgb(39, 35, 46);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* border-top: 1px black solid; */
+  /* border-bottom: solid 1px black; */
+}
+
+.footer-licence {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.project-button {
+  border: solid 2px white;
+  border-radius: 6px;
+  transition: 250ms;
+  width: 250px;
+  height: 50px;
+  padding: 8px 0px;
+  background-color: black;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 0 20px rgb(228, 228, 255);
+}
+
+.project-button:hover {
+  background-color: rgb(35, 35, 179);
+}
+
+.project-button:active {
+  background-color: rgb(122, 122, 233);
+}
+
+.white-button {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 940px) {
+  .menu-wrap {
+    width: 500px;
+  }
+
+  .nav-legado-buttons {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    border: solid black 3px;
+    border-radius: 24px;
+  }
+
+  .nav-legado-buttons:hover {
+    box-shadow: 0px 0px 3px 3px rgb(255, 255, 255, 0.3);
+    /* in order: x offset, y offset, blur size, spread size, color */
+    /* blur size and spread size are optional (they default to 0) */
+  }
+
+  .legado-se-button {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 160px;
+    height: 40px;
+    padding-left: 10px;
+  }
+
+  .yin-yang {
+    height: 40px;
     padding: 0px 0px;
     background-color: rgb(255, 255, 255);
     cursor: pointer;
     margin: 0px;
-}
+  }
 
-.legado-tech-button {
-    border: solid 1px black;
-    border-radius: 0px;
+  .legado-tech-button {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    transition: 250ms;
-    width: 230px;
-    height: 45px;
-    padding: 0px 0px;
-    background-color: black;
-    font-size: 20px;
-    font-weight: 700;
-    cursor: pointer;
-    color:white;
-    margin: 0px;
-}
+    width: 180px;
+    height: 40px;
+  }
 
-.legado {
-    font-family: 'Piazzolla', serif;
+  .legado {
+    font-family: "Piazzolla", serif;
     display: inline;
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 20px;
     font-weight: 900;
-}
+  }
 
-.tech {
-    font-family: 'Roboto', sans-serif;
+  .tech {
+    font-family: "Roboto", sans-serif;
     display: inline;
-    font-size: 36px;
+    font-size: 30px;
+    line-height: 20px;
     font-weight: 300;
-}
+  }
 
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+  .nav-links {
+    gap: 4px;
+  }
 
-.nav-links img {                /* Gäller alla bild-element under nav-links */
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-}
+  .nav-links img {
+    /* Gäller alla bild-element under nav-links */
+    height: 46px;
+    width: 46px;
+    border-radius: 22px;
+  }
 
-.main-page {
-    scroll-behavior: smooth;
+  .about-me {
+    /* flex-direction: column;
+        padding: 12px 0px;
+        margin-top: 10px; */
     flex-direction: column;
-    display: flex;
-    gap: 15px;
-}
-
-.about-me {
-    background-color: rgb(26, 23, 31);
-    position: relative;     /* Egna ändringar */
-    top: 85px;              
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px auto;
-    padding: 8px 8px 8px 8px;
-    max-width: 900px;
-    height: 520px;           /* Ändrat från 85vh */
-    border-radius: 15px;
-    /* border: 1px solid black; */
-    gap: 5px;
-    box-shadow: rgba(0, 0, 0, 0.15) 6px 4px 6px;
-}
-
-#name {
-    color: white;
-    font-size: 45px;
-    font-weight: 200;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#profession {
-    color: rgb(209, 196, 231);
-    font-size: 22px;
-    font-weight: 600;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.about-me p {
-    color: rgb(209, 196, 231);
-    font-size: 18px;
-    line-height: 24px;
-    margin: 10px;
-    font-weight: 300;
-    text-align: center;
-}
-
-#jimmy-legado-holmevi-portrait {
-    margin-top: 3px;
-    height: 500px;
-    border-radius: 10px;
-}
-
-.content-section {
-    background-color: rgb(26, 23, 31);
-    color: rgb(209, 196, 231);
-    position: relative;     /* Egna ändringar */
-    top: 85px;              
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0px auto;
-    padding: 8px 8px 8px 8px;
-    width: 900px;
-    height: fit-content;           /* Ändrat från 85vh */
-    border-radius: 15px;
-    /* border: 1px solid black; */
+    max-width: 500px;
+    height: fit-content; /* Ändrat från 85vh */
     gap: 0px;
-    box-shadow: rgba(0, 0, 0, 0.15) 6px 4px 6px;
-}
+  }
 
-.content-title {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 0px;
-}
-
-.content-text {
-    color: #4b5563;
-    font-size: 18px;
-    margin-bottom: 3px;
-    margin-top: 3px;
-    text-align: center;
-}
-
-.cv-icon {
-    width: 50px;
-    margin: 15px 225px;
-    transition: 0.2s;
-}
-
-.cv-icon:hover {
-    filter: brightness(1.1);
-}
-
-.content-photo-right {
-    background-color: rgb(26, 23, 31);
-    color: rgb(209, 196, 231);
-    position: relative;     /* Egna ändringar */
-    top: 75px;              
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-    margin: 0px auto;
-    padding: 8px 8px 8px 8px;
-    width: 900px;
-    height: fit-content;           /* Ändrat från 85vh */
-    border-radius: 15px;
-    /* border: 1px solid black; */
-    gap: 0px;
-    box-shadow: rgba(0, 0, 0, 0.15) 6px 4px 6px;
-}
-
-.content-photo-right p {
-    color: rgb(209, 196, 231);
-    font-size: 18px;
-    line-height: 24px;
-    margin: 10px;
-    font-weight: 300;
-    text-align: center;
-}
-
-.content-photo-left {
-    background-color: rgb(26, 23, 31);
-    color: rgb(209, 196, 231);
-    position: relative;     /* Egna ändringar */
-    top: 75px;              
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin: 0px auto;
-    padding: 8px 8px 8px 8px;
-    width: 900px;
-    height: fit-content;           /* Ändrat från 85vh */
-    border-radius: 15px;
-    /* border: 1px solid black; */
-    gap: 0px;
-    box-shadow: rgba(0, 0, 0, 0.15) 6px 4px 6px;
-}
-
-.content-photo-left p {
-    color: rgb(209, 196, 231);
-    font-size: 18px;
-    line-height: 24px;
-    margin: 10px;
-    font-weight: 300;
-    text-align: center;
-}
-
-.header-text {
-    color: white;
-    font-size: 45px;
-    font-weight: 200;
+  #jimmy-legado-holmevi-portrait {
     margin-top: 0px;
-    margin-bottom: 10px;
-    text-align: center;
-}
+    padding: 0px;
+  }
 
-.content-image {
-    margin-top: 3px;
-    width: 400px;
-    border-radius: 10px;
-}
-
-.text-container {
-    margin: 0px 40px;
-}
-
-.content-section p {
-    color: rgb(209, 196, 231);
-    font-size: 18px;
-    line-height: 24px;
-    margin: 5px 10px 5px 10px;
-    text-align: center;
-}
-
-.photo-section {
-    background-color: rgb(26, 23, 31);
-    position: relative;     /* Egna ändringar */
-    top: 80px;              
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row-reverse;
-    margin: 0px auto;
-    padding: 8px 8px 8px 8px;
-    max-width: 900px;
-    height: 520px;           /* Ändrat från 85vh */
-    border-radius: 15px;
-    /* border: 1px solid black; */
-    gap: 5px;
-    box-shadow: rgba(0, 0, 0, 0.15) 6px 4px 6px;
-}
-
-.photo-section p {
-    color: rgb(209, 196, 231);
-    font-size: 18px;
-    line-height: 24px;
-    margin: 5px 10px 5px 10px;
-    text-align: center;
-}
-
-.sq-logo {
-    height: 20px;
-    border-radius: 5px;
-    margin-left: 5px;
-}
-
-.end {
-    position: relative;     /* Egna ändringar */
-    top: 70px;              
-    margin: 0px auto;
-    width: 250px;
-    height: 70px;           /* Ändrat från 85vh */
-    /* border: 1px solid black; */
-}
-
-.content-title {
-    color: white;
-    text-align: center;
-    font-size: 28px;
+  #name {
+    font-size: 38px;
     font-weight: 300;
-    margin-bottom: 10px;
-}
-
-.content-text {
-    color: rgb(209, 196, 231);
-    font-size: 18px;
-    margin-bottom: 3px;
-    margin-top: 3px;
+    line-height: 40px;
     text-align: center;
-}
+    margin-bottom: 5px;
+  }
 
-#contact-field {
-    width: 800px;
-    margin-top: 0;
-    margin-bottom: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
+  #profession {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+  }
 
-.contact-block {
+  .about-me p {
+    text-align: center;
+    max-width: 500px;
+  }
+
+  .hero-image img {
+    position: relative;
+    height: 420px;
+  }
+
+  .content-photo-right {
+    /* flex-direction: column;
+        padding: 12px 0px;
+        margin-top: 10px; */
+    flex-direction: column-reverse;
+    max-width: 500px;
+    height: fit-content; /* Ändrat från 85vh */
+    gap: 20px;
+  }
+
+  .content-photo-left {
+    /* flex-direction: column;
+        padding: 12px 0px;
+        margin-top: 10px; */
+    flex-direction: column-reverse;
+    max-width: 500px;
+    height: fit-content; /* Ändrat från 85vh */
+    gap: 20px;
+  }
+
+  .content-section {
+    max-width: 500px;
+  }
+
+  #contact-field {
+    width: 400px;
+  }
+
+  .contact-block {
     width: 400px;
     margin: 0px;
     line-height: 20px;
     text-align: right;
-}
+  }
 
-.chip-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0px 5px 0px;
-}
-
-.chip {
-    border-radius: 99px;
-    padding: 4px 12px;
-    font-size: 14px;
-    border: 1px solid rgb(161, 136, 206);
-    color: rgb(209, 196, 231);
-    background-color: rgb(39, 35, 46);
-}
-
-.project {
-    position: relative;     /* Egna ändringar */
-    top: 0px; 
-}
-
-.projects-container {
-    background-color: rgb(26, 23, 31);
-    color: rgb(209, 196, 231);
-    position: relative;     /* Egna ändringar */
-    top: 80px;              
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 5px auto;
-    padding: 8px 0px 8px 0px;
-    width: 900px;
-    height: fit-content;           /* Ändrat från 85vh */
-    border-radius: 15px;
-    /* border: 1px solid black; */
-    gap: 0px;
-    box-shadow: rgba(0, 0, 0, 0.15) 6px 4px 6px;
-}
-
-.project {
-    margin: 10px;
+  .project {
+    margin: 5px;
     /*  max-width: calc(1024px - 40px);     */
-    max-width: 420px;
-    height: 450px;
+    max-width: 470px;
+    height: 487px;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+  }
+
+  .projects-container {
+    max-width: 500px;
+  }
 }
 
-#project-collection {
+@media screen and (max-width: 550px) {
+  p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .menu-wrap {
+    width: 360px;
+  }
+
+  .nav-legado-buttons {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    border: solid black 3px;
+    border-radius: 24px;
+  }
+
+  .nav-legado-buttons:hover {
+    box-shadow: 0px 0px 3px 3px rgb(255, 255, 255, 0.3);
+    /* in order: x offset, y offset, blur size, spread size, color */
+    /* blur size and spread size are optional (they default to 0) */
+  }
+
+  .legado-se-button {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 115px;
+    height: 30px;
+    padding-left: 5px;
+  }
+
+  .yin-yang {
+    height: 30px;
+    padding: 0px 0px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 0px;
+  }
+
+  .legado-tech-button {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 135px;
+    height: 30px;
+  }
+
+  .legado {
+    font-family: "Piazzolla", serif;
+    display: inline;
+    font-size: 22px;
+    line-height: 20px;
+    font-weight: 900;
+  }
+
+  .tech {
+    font-family: "Roboto", sans-serif;
+    display: inline;
+    font-size: 22px;
+    line-height: 20px;
+    font-weight: 300;
+  }
+
+  .nav-links {
+    gap: 4px;
+  }
+
+  .nav-links img {
+    /* Gäller alla bild-element under nav-links */
+    height: 36px;
+    width: 36px;
+    border-radius: 22px;
+  }
+
+  .about-me {
+    top: 85px;
+    padding: 8px 12px 8px 12px;
+    max-width: 350px;
+    gap: 10px;
+  }
+
+  .content-photo-right {
+    top: 85px;
+    padding: 8px 12px 8px 12px;
+    max-width: 350px;
+    gap: 10px;
+  }
+
+  .content-photo-left {
+    top: 85px;
+    padding: 8px 12px 8px 12px;
+    max-width: 350px;
+    gap: 10px;
+  }
+
+  #jimmy-legado-holmevi-portrait {
+    margin-top: 0px;
+    height: 440px;
+    border-radius: 10px;
+  }
+
+  #name {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #profession {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .content-section {
+    top: 85px;
+    max-width: 350px;
+    height: fit-content;
+    gap: 10px;
+  }
+
+  .cv-icon {
+    width: 80px;
+    margin: 10px 120px;
+  }
+
+  .content-image {
+    margin-top: 3px;
+    width: 330px;
+    border-radius: 10px;
+  }
+
+  .work {
+    top: 50px;
+  }
+
+  .work-title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 6px;
+  }
+
+  .projects-container {
+    top: 85px;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px auto;
+    padding: 8px 0px 8px 0px;
+    max-width: 350px;
+    gap: 10px;
+  }
+
+  .project {
+    margin: 5px;
+    top: 0px;
+    /*  max-width: calc(1024px - 40px);     */
+    max-width: 320px;
+    height: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #project-collection {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 900px;
-}
+    width: 350px;
+  }
 
-.img-container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    animation-name: project-frames;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-}
+  .chip {
+    padding: 4px 10px;
+  }
 
-@keyframes project-frames {
-    0%  {transform: scale(1);}
-    50%  {transform: scale(2);}
-}
+  .project {
+    margin-top: 25px auto;
+    height: 300px;
+  }
 
-.img-overlay {
-    position: absolute;
-    inset: 0px;
-    background-color: #26262699;
-    opacity: 0;
-}
+  .project-text-title {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 12px;
+  }
 
-.project-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;      /* Bestämmer hur bild ska passa innuti div*/
-}
+  .project-text-subtitle {
+    padding: 10px 0px;
+    margin-top: 12px;
+    margin-bottom: 15px;
+  }
 
-.project-text-container {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-}
-
-.project-text-title {
-    font-size: 36px;
-    line-height: 40px;
-    color: white;
-    font-weight: 900;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 4px #000000;
-}
-
-.chip-wrapper-project {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 20px;
-}
-
-.project-text-subtitle {
+  .project-button {
+    height: 40px;
+    width: 200px;
     font-size: 18px;
-    margin-bottom: 30px;
-    color: white;
-    margin-top: 30px;
-    text-shadow: 2px 2px 2px #000000;
-    text-align: center;
-}
-
-footer {
-    position: fixed;
-    width: 100vw;
-    height: 60px;
-    bottom: 0px;
-    padding: 20px 0px;
-    background-color: rgb(39, 35, 46);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    /* border-top: 1px black solid; */
-    /* border-bottom: solid 1px black; */
-}
-
-.footer-licence {
-    text-align: center;
-    color: white;
-    font-size: 15px;
-    font-weight: 300;
-
-}
-
-.project-button {
-    border: solid 2px white;
-    border-radius: 6px;
-    transition: 250ms;
-    width: 250px;
-    height: 50px;
-    padding: 8px 0px;
-    background-color: black;
-    font-size: 20px;
-    font-weight: 700;
-    cursor: pointer;
-    color:white;
-    box-shadow: 0 0 20px rgb(228, 228, 255);
-}
-
-.project-button:hover {
-    background-color: rgb(35, 35, 179);
-}
-
-.project-button:active {
-    background-color: rgb(122, 122, 233);
-}
-
-.white-button {
-    background-color: white;
-    color: black;
-}
-
-@media screen and (max-width: 940px) {
-    .menu-wrap {
-        justify-content: center;
-    }
-
-    .about-me {
-        /* flex-direction: column;
-        padding: 12px 0px;
-        margin-top: 10px; */
-        flex-direction: column;
-        max-width: 500px;
-        height: fit-content;           /* Ändrat från 85vh */
-        gap: 0px;
-    }
-
-    #jimmy-legado-holmevi-portrait {
-        margin-top: 0px;
-        padding: 0px;
-    }
-
-    #name {
-        font-size: 38px;
-        font-weight: 300;
-        line-height: 40px;
-        text-align: center;
-        margin-bottom: 5px;
-    }
-    
-    #profession {
-        font-size: 19px;
-        font-weight: 600;
-        margin-bottom: 15px;
-        text-align: center;
-    }
-
-    .about-me p {
-        text-align: center;
-        max-width: 500px;
-    }
-
-    .hero-image img {
-        position: relative;
-        height: 420px;
-    }
-
-    .content-photo-right {
-        /* flex-direction: column;
-        padding: 12px 0px;
-        margin-top: 10px; */
-        flex-direction: column-reverse;
-        max-width: 500px;
-        height: fit-content;           /* Ändrat från 85vh */
-        gap: 20px;
-    }
-
-    .content-photo-left {
-        /* flex-direction: column;
-        padding: 12px 0px;
-        margin-top: 10px; */
-        flex-direction: column-reverse;
-        max-width: 500px;
-        height: fit-content;           /* Ändrat från 85vh */
-        gap: 20px;
-    }
-
-    .content-section {
-        max-width: 500px;
-    }
-
-    #contact-field {
-        width: 400px;
-    }
-    
-    .contact-block {
-        width: 400px;
-        margin: 0px;
-        line-height: 20px;
-        text-align: right;
-    }
-
-    .project {
-        margin: 5px;
-        /*  max-width: calc(1024px - 40px);     */
-        max-width: 470px;
-        height: 487px;
-        border-radius: 10px;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .projects-container {
-        max-width: 500px;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    p {
-        font-size: 12px;
-        line-height: 18px;
-    }
-
-    .nav-legado-buttons {
-        display: flex;
-        background-color: rgb(39, 35, 46);
-        border-radius: 20px;
-    }
-    
-    .nav-legado-buttons:hover {
-        box-shadow: 0px 0px 5px 5px rgb(161, 136, 206);
-        /* in order: x offset, y offset, blur size, spread size, color */
-        /* blur size and spread size are optional (they default to 0) */
-    }
-    
-    .legado-se-button {
-        width: 150px;
-        height: 35px;
-        padding: 0px 0px;
-        padding-left: 10px;
-
-    }
-    
-    .yin-yang {
-        height: 35px;
-        padding: 0px 0px;
-    }
-    
-    .legado-tech-button {
-        width: 180px;
-        height: 35px;
-        padding: 0px 0px;
-    }
-    
-    .legado {
-        font-size: 26px;
-        line-height: 28px;
-        font-weight: 900;
-    }
-    
-    .tech {
-        font-size: 26px;
-        font-weight: 300;
-    }
-    
-    .nav-links img {                /* Gäller alla bild-element under nav-links */
-        height: 25px;
-        width: 25px;
-    }
-
-    .about-me {
-        top: 85px;
-        padding: 8px 12px 8px 12px;
-        max-width: 350px;
-        gap: 10px;
-    }
-
-    .content-photo-right {
-        top: 85px;
-        padding: 8px 12px 8px 12px;
-        max-width: 350px;
-        gap: 10px;
-    }
-
-    .content-photo-left {
-        top: 85px;
-        padding: 8px 12px 8px 12px;
-        max-width: 350px;
-        gap: 10px;
-    }
-
-    #jimmy-legado-holmevi-portrait {
-        margin-top: 0px;
-        height: 440px;
-        border-radius: 10px;
-    }
-    
-    #name {
-        font-size: 30px;
-        font-weight: 300;
-        line-height: 30px;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    
-    #profession {
-        font-size: 22px;
-        font-weight: 600;
-        margin-bottom: 15px;
-        text-align: center;
-    }
-
-    .content-section {
-        top: 85px;
-        max-width: 350px;
-        height: fit-content;
-        gap: 10px;
-    }
-
-    .cv-icon {
-        width: 80px;
-        margin: 10px 120px;
-    }
-
-    .content-image {
-        margin-top: 3px;
-        width: 330px;
-        border-radius: 10px;
-    }
-
-    .work {
-        top: 50px;
-    }
-
-    .work-title {
-        font-size: 30px;
-        line-height: 36px;
-        margin-bottom: 6px;
-    }
-
-    .projects-container {
-        top: 85px;         
-        flex-wrap: nowrap;
-        align-items: center;
-        flex-direction: column;
-        margin: 0px auto;
-        padding: 8px 0px 8px 0px;
-        max-width: 350px;
-        gap: 10px
-    }
-    
-    .project {
-        margin: 5px;
-        top: 0px;
-        /*  max-width: calc(1024px - 40px);     */
-        max-width: 320px;
-        height: 320px;
-        border-radius: 10px;
-        overflow: hidden;
-        position: relative;
-    }
-    
-    #project-collection {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 350px;
-    }
-
-    .chip {
-        padding: 4px 10px;
-    }
-
-    .project {
-        margin-top: 25px auto;
-        height: 300px;
-    }
-
-    .project-text-title {
-        font-size: 22px;
-        line-height: 32px;
-        margin-bottom: 12px;
-    }
-
-    .project-text-subtitle {
-        padding: 10px 0px;
-        margin-top: 12px;
-        margin-bottom: 15px;
-    }
-
-    .project-button {
-        height: 40px;
-        width: 200px;
-        font-size: 18px;
-    }
+  }
 }
