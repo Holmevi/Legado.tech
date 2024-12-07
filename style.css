@@ -935,7 +935,7 @@ footer {
 
   .project {
     margin-top: 25px auto;
-    height: 300px;
+    height: 330px;
   }
 
   .project-text-title {
@@ -957,6 +957,6 @@ footer {
   }
 
   .end {
-    top: 65px;
+    top: 55px;
   }
 }
