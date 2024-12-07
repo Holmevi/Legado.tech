@@ -1,0 +1,164 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #16111a;
+    color: white;
+}
+
+#screen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 580px;
+}
+
+#sub-container {
+    background-color: #2d2039;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    border-radius: 50px;
+}
+
+#advice-number {
+    color: #A638F6;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#quote-container {
+    width: 420px;
+    height: 160px;
+    margin: 0px;
+}
+
+#quote {
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 43px;
+    font-size: 28px;
+}
+
+#divider {
+    height: 0px;
+    fill: white;
+}
+
+.svg-container {
+    color: white;
+    height: 0px;
+}
+
+#button {
+    position: relative;
+    top: 50px;
+    background-color: #A638F6;
+    width: 110px;
+    height: 110px;
+    border: 0px solid transparent;
+    border-radius: 55px;
+    transition: 0.2s;
+    margin-top: 30px;
+}
+
+#button:hover {
+    box-shadow: 0 0 20px 2px #A638F6;
+}
+
+#button:active {
+    background-color: #c068ff;
+    box-shadow: 0 0 40px 2px #A638F6;
+}
+
+#button-image {
+    width: 40px;
+}
+
+#logo {
+    width: 300px;
+}
+
+@media screen and (max-width: 530px) {
+    
+    #main-container {
+        flex-direction: column-reverse;
+        height: 350px;
+    }
+    
+    #sub-container {
+        width: 350px;
+        height: 265px;
+        border-radius: 50px;
+    }
+    
+    #advice-number {
+        letter-spacing: 2px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    
+    #quote-container {
+        width: 320px;
+        height: 100px;
+        margin: 0px;
+    }
+    
+    #quote {
+        letter-spacing: 2px;
+        line-height: 30px;
+        font-size: 21px;
+    }
+    
+    .svg-container {
+        color: white;
+        zoom: 70%;
+        margin-top: 10px;
+    }
+    
+    #button {
+        top: 40px;
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        transition: 0.2s;
+        margin-top: 15px;
+    }
+    
+    #button:hover {
+        box-shadow: 0 0 20px 2px #A638F6;
+    }
+    
+    #button:active {
+        background-color: #c068ff;
+        box-shadow: 0 0 40px 2px #A638F6;
+    }
+    
+    #button-image {
+        width: 30px;
+    }
+    
+    #logo {
+        width: 200px;
+    }
+}

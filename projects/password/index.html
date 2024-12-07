@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" sizes="32x32" href="images/techover.ico" />
+
+    <title>Lösenords Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <div class="main-container">
+        <h1 id="header-text">Password Generator</h1>
+        <div class="password-container">
+          <h2 id="generated-password"></h2>
+          <img id="copy-icon" src="images/copy-icon.svg" alt="Copy">
+        </div>
+        <div class="settings-container">
+          <div id="length-box">
+            <p class="option-text">Character Length</p>
+            <span id="number-of-chars">10</span>
+          </div>
+          <div class="slide-container">
+            <input id="slider" type="range" min="1" max="15" value="10">
+          </div>
+          <div class="settings-box">
+            <div class="checkbox-field">
+              <label for="checkbox-1" id="checkbox-square-1">
+                <img id="check-1" src="images/checkmark.svg" alt="check">
+                <input id="checkbox-1" type="checkbox">
+              </label> 
+              <p class="checkbox-text">Include Uppercase Letters</p>
+            </div>
+            <div class="checkbox-field">
+              <label for="checkbox-2" id="checkbox-square-2">
+                <img id="check-2" src="images/checkmark.svg" alt="check">
+                <input id="checkbox-2" type="checkbox">
+              </label> 
+              <p class="checkbox-text">Include Lowercase Letters</p>
+            </div>
+            <div class="checkbox-field">
+              <label for="checkbox-3" id="checkbox-square-3">
+                <img id="check-3" src="images/checkmark.svg" alt="check">
+                <input id="checkbox-3" type="checkbox">
+              </label> 
+              <p class="checkbox-text">Include Numbers</p>
+            </div>
+            <div class="checkbox-field">
+              <label for="checkbox-4" id="checkbox-square-4">
+                <img id="check-4" src="images/checkmark.svg" alt="check">
+                <input id="checkbox-4" type="checkbox">
+              </label> 
+              <p class="checkbox-text">Include Symbols</p>
+            </div>
+            <div id="strength-box">
+              <p id="strength-caption">Strength</p>
+              <div id="strength-meter-box">
+                <p id="strength-text" class="option-text"></p>
+                <div id="strength-meter">
+                  <div id="meter-1" class="meter-field"></div>
+                  <div id="meter-2" class="meter-field"></div>
+                  <div id="meter-3" class="meter-field"></div>
+                  <div id="meter-4" class="meter-field"></div>
+                </div>
+              </div>
+            </div>
+            <button class="generate-button">Generate</button>
+          </div>
+        </div> 
+        <img id="logo" src="images/techover-logo.png" alt="Techover Logo">
+      </div>
+    <script src="index.js"></script>
+  </body>
+</html>
