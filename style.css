@@ -757,8 +757,13 @@ footer {
     line-height: 18px;
   }
 
+  .nav-bar {
+    height: 50px;
+  }
+
   .menu-wrap {
-    width: 360px;
+    width: 350px;
+    height: 50px;
   }
 
   .nav-legado-buttons {
@@ -778,12 +783,12 @@ footer {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     width: 115px;
-    height: 30px;
+    height: 28px;
     padding-left: 5px;
   }
 
   .yin-yang {
-    height: 30px;
+    height: 28px;
     padding: 0px 0px;
     background-color: rgb(255, 255, 255);
     cursor: pointer;
@@ -794,7 +799,7 @@ footer {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     width: 135px;
-    height: 30px;
+    height: 28px;
   }
 
   .legado {
@@ -819,27 +824,27 @@ footer {
 
   .nav-links img {
     /* Gäller alla bild-element under nav-links */
-    height: 36px;
-    width: 36px;
+    height: 34px;
+    width: 34px;
     border-radius: 22px;
   }
 
   .about-me {
-    top: 85px;
+    top: 65px;
     padding: 8px 12px 8px 12px;
     max-width: 350px;
     gap: 10px;
   }
 
   .content-photo-right {
-    top: 85px;
+    top: 65px;
     padding: 8px 12px 8px 12px;
     max-width: 350px;
     gap: 10px;
   }
 
   .content-photo-left {
-    top: 85px;
+    top: 65px;
     padding: 8px 12px 8px 12px;
     max-width: 350px;
     gap: 10px;
@@ -867,7 +872,7 @@ footer {
   }
 
   .content-section {
-    top: 85px;
+    top: 65px;
     max-width: 350px;
     height: fit-content;
     gap: 10px;
@@ -895,7 +900,7 @@ footer {
   }
 
   .projects-container {
-    top: 85px;
+    top: 65px;
     flex-wrap: nowrap;
     align-items: center;
     flex-direction: column;
@@ -949,5 +954,9 @@ footer {
     height: 40px;
     width: 200px;
     font-size: 18px;
+  }
+
+  .end {
+    top: 65px;
   }
 }
