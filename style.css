@@ -752,6 +752,42 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    max-width: 100%;    /* Ensure content doesn't exceed the viewport width */
+}
+
+  /* Ensure no accidental zooming or content overflow */
+  body {
+    touch-action: manipulation; /* Prevents pinch-zoom gestures */
+    overflow: hidden;           /* Prevents any additional scrolling */
+    overflow-y: auto;  /* Allow vertical scrolling */
+    position: relative;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Prevent zooming for inputs */
+  input, select, textarea {
+    touch-action: manipulation;
+  }
+
+  /* Force all elements to fit within the viewport */
+  img, iframe, video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Prevent flex items from expanding beyond viewport */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   p {
     font-size: 12px;
     line-height: 18px;
