@@ -30,10 +30,6 @@ a {
   text-decoration: none; /* Ta bort understrukning av länkar */
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .nav-bar {
   display: flex;
   flex-wrap: wrap;
@@ -266,7 +262,7 @@ html {
   background-color: rgb(26, 23, 31);
   color: rgb(209, 196, 231);
   position: relative; /* Egna ändringar */
-  top: 75px;
+  top: 85px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -294,7 +290,7 @@ html {
   background-color: rgb(26, 23, 31);
   color: rgb(209, 196, 231);
   position: relative; /* Egna ändringar */
-  top: 75px;
+  top: 85px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -330,6 +326,12 @@ html {
 .content-image {
   margin-top: 3px;
   width: 400px;
+  border-radius: 10px;
+}
+
+.sponsor-image {
+  margin-top: 3px;
+  width: 412px;
   border-radius: 10px;
 }
 
@@ -757,7 +759,7 @@ footer {
     padding: 0;
     overflow-x: hidden; /* Disable horizontal scrolling */
     max-width: 100%;    /* Ensure content doesn't exceed the viewport width */
-}
+  }
 
   /* Ensure no accidental zooming or content overflow */
   body {
@@ -920,6 +922,12 @@ footer {
   }
 
   .content-image {
+    margin-top: 3px;
+    width: 330px;
+    border-radius: 10px;
+  }
+
+  .sponsor-image {
     margin-top: 3px;
     width: 330px;
     border-radius: 10px;
