@@ -144,7 +144,7 @@ a {
   /* Gäller alla bild-element under nav-links */
   height: 50px;
   width: 50px;
-  border-radius: 22px;
+  border-radius: 25px;
   cursor: pointer;
   background-color: rgb(0, 0, 0);
   border: solid black 3px;
@@ -177,7 +177,7 @@ a {
   height: 520px; /* Ändrat från 85vh */
   border-radius: 15px;
   /* border: 1px solid black; */
-  gap: 5px;
+  gap: 0px;
   box-shadow: rgba(0, 0, 0, 0.15) 6px 4px 6px;
 }
 
@@ -208,9 +208,11 @@ a {
   text-align: center;
 }
 
+
+
 #jimmy-legado-holmevi-portrait {
-  margin-top: 3px;
   height: 500px;
+  margin: 2px 2px 0px 2px;
   border-radius: 10px;
 }
 
@@ -324,14 +326,14 @@ a {
 }
 
 .content-image {
-  margin-top: 3px;
   width: 400px;
+  margin: 2px 2px 0px 2px;
   border-radius: 10px;
 }
 
 .sponsor-image {
-  margin-top: 3px;
   width: 412px;
+  margin: 2px 2px 0px 2px;
   border-radius: 10px;
 }
 
@@ -350,7 +352,7 @@ a {
 .photo-section {
   background-color: rgb(26, 23, 31);
   position: relative; /* Egna ändringar */
-  top: 80px;
+  top: 85px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -452,7 +454,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 5px auto;
+  margin: 0px auto;
   padding: 8px 0px 8px 0px;
   width: 900px;
   height: fit-content; /* Ändrat från 85vh */
@@ -889,7 +891,7 @@ footer {
   }
 
   #jimmy-legado-holmevi-portrait {
-    margin-top: 0px;
+    margin: 2px 0px 0px 0px;
     height: 440px;
     border-radius: 10px;
   }
@@ -922,13 +924,13 @@ footer {
   }
 
   .content-image {
-    margin-top: 3px;
+    margin: 2px 0px 0px 0px;
     width: 330px;
     border-radius: 10px;
   }
 
   .sponsor-image {
-    margin-top: 3px;
+    margin: 2px 0px 0px 0px;
     width: 330px;
     border-radius: 10px;
   }
