@@ -216,6 +216,11 @@ a {
   border-radius: 10px;
 }
 
+.cert-image {
+  width: 860px;
+  border-radius: 10px;
+}
+
 .content-section {
   background-color: rgb(26, 23, 31);
   color: rgb(209, 196, 231);
@@ -678,6 +683,10 @@ footer {
   #jimmy-legado-holmevi-portrait {
     margin-top: 0px;
     padding: 0px;
+  }
+
+  .cert-image {
+    width: 470px;
   }
 
   #name {
